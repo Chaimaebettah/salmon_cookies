@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+.salon_body_page {
+    background-color: #ffa280;
+}
+
+#salmon_pic {
+    width: 200px;
+    height: 100px;
+    /*margin-left: 400px;*/
+}
+
+header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 60px;
+}
+
+#cookie {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    float: left;
+    margin: 60px;
+}
+
+section {
+    overflow: auto;
+}
+
+.salmon_intro {
+    float: left;
+    margin: 100px;
+    width: 300px;
+    text-align: center;
+}
+
+.nutrition {
+    float: left;
+    margin: 100px;
+}
+
+footer {
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.locations {
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+}
+
+h4 {
+    font-family: sans-serif;
+}
+
+.sales {
+    overflow: auto;
+    text-align: center;
+}
+
+.cookie_locations {
+    margin: 10px;
+}
+
+.cookie_locations ul {
+    border-radius: 20px;
+    padding: 20px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    background-color: #ffa280;
+    margin-top: 60px;
+}

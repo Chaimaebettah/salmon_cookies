@@ -67,37 +67,9 @@ function displayTableHeader() {
   }
 
   //render the  column daily location total
-  var lastColumn = document.createElement('td');
+  var lastColumn = document.createElement('th');
   lastColumn.textContent='Daily location total';
   trEl.appendChild(lastColumn);
-  selectCookies.appendChild(trEl);
-
-}
-
-function displayTableFooter() {
-  var trEl = document.createElement('tr');
-  var totalEl = document.createElement('th');
-  totalEl.textContent='Total';
-  trEl.appendChild(totalEl)
-
-  for( var a = 0; a < hours.length; a++){
-    var totalCookiesPerHour = 0;
-    for(var b = 0; b < myLocations.length; b++){
-        // console.log(myLocations[b].totalCookiesperHour)
-        for( var c = 0; c < myLocations[b].totalCookiesperHour.length; c++){
-          if(a === c){
-            totalCookiesPerHour += myLocations[b].totalCookiesperHour[a];
-          }
-        }
-    }
-    console.log(totalCookiesPerHour);
-    var totalForEachhour = document.createElement('th');
-    totalForEachhour.textContent = totalCookiesPerHour;
-    trEl.appendChild(totalForEachhour);
-
-  }
-
-
   selectCookies.appendChild(trEl);
 
 }
@@ -112,7 +84,6 @@ new Location('SeattleCenter',11 ,38,3.7);
 new Location('CapitolHill',20 ,38 ,2.3);
 new Location('Alki',2,16,4.6);
 
-displayTableFooter();
 
 
 

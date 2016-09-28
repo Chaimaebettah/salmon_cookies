@@ -23,8 +23,16 @@ function Location (locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCu
   };
   this.render = function(){
     this.cookiesPurchasedPerHour();
-
-
+    var trEl = document.createElement('tr');
+    var firstColumn = document.createElement('td');
+    firstColumn.textContent = this.locationName;
+    trEl.appendChild(firstColumn);
+    for(var i = 0; i < this.totalCookiesperHour.length; i++){
+      var tdEl = document.createElement('td');
+      tdEl.textContent = this.totalCookiesperHour[i];
+      trEl.appendChild(tdEl);
+    }
+    selectCookies.appendChild(trEl);
 
   };
   this.render();
@@ -34,12 +42,18 @@ function Location (locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCu
 //the house
 var selectCookies = document.getElementById('cookieslocation');
 var trEl = document.createElement('tr');
+var emptyTrEl = document.createElement('th');
+  emptyTrEl.textContent='';
+  trEl.appendChild(emptyTrEl)
+selectCookies.appendChild(trEl);
 for(var i = 0; i < hours.length; i++){
   var thEl = document.createElement('th');
   thEl.textContent = hours[i];
   trEl.appendChild(thEl);
 }
 selectCookies.appendChild(trEl);
+
+
 
 var myLocations = [];
 new Location('firstAndPike',23, 65, 6.3);
@@ -49,5 +63,5 @@ new Location('CapitolHill',20 ,38 ,2.3);
 new Location('Alki',2,16,4.6);
 
 
-console.log(myLocations);
+// console.log(myLocations);
 // console.log(myLocations.totalDailyCookieSale);

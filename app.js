@@ -2,8 +2,8 @@
 var hours = ['6am','7am','8am','9am','10am','11am','12am','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 //create a constraction function
 var selectCookies = document.getElementById('cookieslocation');
-
-function Location (locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {//eslint desable line
+var myLocations = [];
+function Location (locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
   this.locationName = locationName;
   this.minCustPerHour = minCustPerHour;
   this.maxCustPerHour = maxCustPerHour;
@@ -51,14 +51,11 @@ function Location (locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCu
 };
 
 //render the empty th
-
-
-
 function displayTableHeader() {
   var trEl = document.createElement('tr');
   var emptyTrEl = document.createElement('th');
-    emptyTrEl.textContent='';
-    trEl.appendChild(emptyTrEl)
+  emptyTrEl.textContent = '';
+  trEl.appendChild(emptyTrEl);
   //render the hours
   for(var i = 0; i < hours.length; i++){
     var thEl = document.createElement('th');
@@ -68,7 +65,7 @@ function displayTableHeader() {
 
   //render the  column daily location total
   var lastColumn = document.createElement('td');
-  lastColumn.textContent='Daily location total';
+  lastColumn.textContent = 'Daily location total';
   trEl.appendChild(lastColumn);
   selectCookies.appendChild(trEl);
 
@@ -77,25 +74,26 @@ function displayTableHeader() {
 function displayTableFooter() {
   var trEl = document.createElement('tr');
   var totalEl = document.createElement('th');
-  totalEl.textContent='Total';
-  trEl.appendChild(totalEl)
-   var totalOfTotal = 0;
+  totalEl.textContent = 'Total';
+  trEl.appendChild(totalEl);
+  var totalOfTotal = 0;
   for( var a = 0; a < hours.length; a++){
     var totalCookiesPerHour = 0;
 
     for(var b = 0; b < myLocations.length; b++){
         // console.log(myLocations[b].totalCookiesperHour)
-        for( var c = 0; c < myLocations[b].totalCookiesperHour.length; c++){
-          if(a === c){
-            totalCookiesPerHour += myLocations[b].totalCookiesperHour[a];
-            totalOfTotal = totalCookiesPerHour;
-          }
+      for( var c = 0; c < myLocations[b].totalCookiesperHour.length; c++){
+        if(a === c){
+          totalCookiesPerHour += myLocations[b].totalCookiesperHour[a];
+          totalOfTotal = totalCookiesPerHour;
         }
+      }
     }
     console.log(totalCookiesPerHour);
     var totalForEachhour = document.createElement('th');
     totalForEachhour.textContent = totalOfTotal;
     trEl.appendChild(totalForEachhour);
+
 
 
   }
@@ -110,7 +108,6 @@ function displayTableFooter() {
 
 displayTableHeader();
 // create a 5 instance.
-var myLocations = [];
 new Location('firstAndPike',23, 65, 6.3);
 new Location('SeaTacAirport', 3, 24, 1.2);
 new Location('SeattleCenter',11 ,38,3.7);

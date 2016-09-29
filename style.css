@@ -1,7 +1,7 @@
-* {
+    * {
     margin: 0;
     padding: 0;
-    border: none;
+    /*border: none;*/
     list-style: none;
 }
 
@@ -62,7 +62,45 @@ h4 {
 }
 
 table, th, td {
+    margin: 50px;
     border: 1px solid black;
     background-color: #ffa280;
     padding: 10px;
 }
+
+form input {
+    margin: 30px;
+}
+
+#sales {
+    font-size: 50px;
+    text-align: center;
+    color: #ffa280;
+}
+
+fieldset {
+    border: 4px solid #ffa280;
+    margin: 0 50px;
+}
+
+#formButon {
+    /*text-align: center;*/
+    margin-left: 500px;
+    padding: 10px 60px;
+    background-color: #ffa280;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid #ffa280;
+    padding: 10px 60px;
+}
+
+label {
+    margin-left: 100px;
+}
+
+#main {
+    color: #ffa280;
+    font-size: 30px;
+    margin-left: 5s00px;

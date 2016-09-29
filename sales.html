@@ -8,8 +8,23 @@
 </head>
 
 <body>
-
+    <h1 id="sales">Sales</h1>
+    <form id="cookieform">
+        <fieldset>
+            <legend> Cookie Form</legend>
+            <label for="name">Name</label >
+            <input type="text" name="name" value="" required >
+            <label for="min">Mincustperhour</label>
+            <input type="text" name="min" required>
+            <label for="max">Maxcustperhour</label>
+            <input type="text" name="max" value="" required>
+            <label for="avg">Avgcookiepercust</label>
+            <input type="text" name="avg" required>
+            <button id="formButon" type="submit" name="button"> Submit</button>
+        </fieldset>
+    </form>
     <table id="cookieslocation"></table>
+    <a id="main" href="index.html">My website</a>
     <script src="app.js"></script>
 
 </body>

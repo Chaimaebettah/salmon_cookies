@@ -114,5 +114,8 @@ locationForm.addEventListener('submit',function(event){
   myLocations.unshift(newLocation);
   console.log(newLocation);
   displayTable();
-
+  event.target.name.value = null;
+  event.target.min.value = null;
+  event.target.max.value = null;
+  event.target.avg.value = null;
 });

@@ -1,106 +1,233 @@
-    * {
-    margin: 0;
-    padding: 0;
-    /*border: none;*/
-    list-style: none;
-}
+        * {
+        margin: 0;
+        padding: 0;
+        /*border: none;*/
+        list-style: none;
+    }
 
-.salon_body_page {
-    background-color: #ffa280;
-}
+    .salmon_body_page {
+        /*background-color: #ffa280;*/
+    }
 
-#salmon_pic {
-    width: 200px;
-    height: 100px;
-    /*margin-left: 400px;*/
-}
+    #salmon_pic {
+        width: 415px;
+        height: 105px;
+        margin-bottom: 50px;
+        /*margin-left: 400px;*/
+        /*border-radius: 30%;
+    border: 1px solid b*/
+    }
 
-header {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 60px;
-}
+    #chinook {
+        width: 250px;
+        height: 100px;
+        margin-bottom: 50px;
+    }
 
-#cookie {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 1px solid white;
-    float: left;
-    margin: 60px;
-}
+    #navigation {
+        margin-left: 500px;
+    }
 
-section {
-    overflow: auto;
-}
+    #navigation li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
 
-.salmon_intro {
-    float: left;
-    margin: 100px;
-    width: 300px;
-    text-align: center;
-}
+    #navigation li a:hover {
+        color: white;
+    }
 
-.nutrition {
-    float: left;
-    margin: 100px;
-}
+    #fish {
+        border-radius: 50%;
+    }
 
-footer {
-    overflow: auto;
-    padding-top: 60px;
-}
+    header {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        height: 600px;
+        background-color: #ffa280;
+    }
 
-.locations {
-    width: 200px;
-    float: left;
-    margin-left: 50px;
-}
+    .context {
+        width: 500px;
+        margin-left: 400px;
+        float: left;
+        text-align: center;
+    }
 
-h4 {
-    font-family: sans-serif;
-}
+    .title {}
 
-table, th, td {
-    margin: 50px;
-    border: 1px solid black;
-    background-color: #ffa280;
-    padding: 10px;
-}
+    .aboutUs {
+        height: 400px;
+        margin-top: 160px;
+        overflow: auto;
+    }
 
-form input {
-    margin: 30px;
-}
+    #familyPic {
+        /*border:2px solid #ffa280;*/
+        border-radius: 50%;
+        float: left;
+        height: 300px;
+        width: 300px;
+        margin-left: 30px;
+    }
 
-#sales {
-    font-size: 50px;
-    text-align: center;
-    color: #ffa280;
-}
+    .myMenu {
+        overflow: auto;
+        height: 400px;
+    }
 
-fieldset {
-    border: 4px solid #ffa280;
-    margin: 0 50px;
-}
+    .kidsMenu {
+        float: left;
+        margin-left: 150px;
+    }
 
-#formButon {
-    /*text-align: center;*/
-    margin-left: 500px;
-    padding: 10px 60px;
-    background-color: #ffa280;
-    margin-bottom: 10px;
-}
+    .adultMenu {
+        margin-left: 500px;
+        float: left;
+        /*margin-bottom: 400px;*/
+    }
 
-input {
-    border: 1px solid #ffa280;
-    padding: 10px 60px;
-}
+    .myMenu img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
 
-label {
-    margin-left: 100px;
-}
+    .myMenu h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 100px;
+    }
 
-#main {
-    color: #ffa280;
-    font-size: 30px;
-    margin-left: 500px;
+    .myMenu h4 {
+        margin-left: 50px;
+    }
+
+    .souvenir-shop {
+        overflow: auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        text-decoration: underline;
+    }
+
+    #cuter {
+        float: left;
+        border-radius: 50%;
+        margin-left: 100px;
+    }
+
+    #shirt {
+        float: left;
+        height: 300px;
+        border-radius: 50%;
+        margin-left: 400px;
+    }
+
+    #cookie {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 1px solid white;
+        float: left;
+        margin: 60px;
+    }
+
+    section {
+        overflow: auto;
+    }
+
+    footer {
+        position: relative;
+        overflow: auto;
+    }
+
+    footer img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-content {
+        position: absolute;
+        top: 0;
+    }
+
+    .fish-bg {
+        /*position:absolute;*/
+        background-image: url("./images/chinook.jpg");
+        background-repeat: repeat;
+        background-size: 200px;
+        height: 400px;
+        opacity: .05;
+    }
+
+    .footer-content {
+        margin-top: 150px;
+    }
+
+    .footer-content h1 {
+        margin-left: 550px;
+        margin-bottom: 60px;
+        text-decoration: underline;
+    }
+
+    .locations {
+        width: 200px;
+        float: left;
+        margin-left: 50px;
+    }
+
+    .souvenir-shop h1 {
+        margin-left: 550px;
+        margin-bottom: 60px;
+    }
+
+    h4 {
+        font-family: sans-serif;
+    }
+
+    table, th, td {
+        margin: 50px;
+        border: 1px solid black;
+        background-color: #ffa280;
+        padding: 10px;
+    }
+
+    form input {
+        margin: 30px;
+    }
+
+    #sales {
+        font-size: 50px;
+        text-align: center;
+        color: #ffa280;
+    }
+
+    fieldset {
+        border: 4px solid #ffa280;
+        margin: 0 50px;
+    }
+
+    #formButon {
+        /*text-align: center;*/
+        margin-left: 500px;
+        padding: 10px 60px;
+        background-color: #ffa280;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border: 1px solid #ffa280;
+        padding: 10px 60px;
+    }
+
+    label {
+        margin-left: 100px;
+    }
+
+    #main {
+        color: #ffa280;
+        font-size: 30px;
+        margin-left: 500px;
